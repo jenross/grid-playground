@@ -2,64 +2,79 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-  background: #111;
-  color: #fff;
+  background: #ddd;
 }
 
-.col {
-  background: #333;
-  overflow-y: scroll;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  padding: 0 5%;
+  background: blue;
+  color: white;
+  width: 100vw;
 }
 
-.tweet {
-  padding: 10px;
-  border-bottom: solid 1px #444;
-  display: grid;
-  grid-template-columns: 60px auto;
-}
-.tweet img {
-  border-radius: 50%;
-  grid-row: 1 / -1;
-}
-
-.tweet > p,
-.tweet > div {
-  margin-top: 0;
-  grid-column: 2 / -1;
-}
-
-.grid {
-  display: grid;
-  height: 100vh;
-  grid-column-gap: 7px;
-  grid-template: 52px auto / 50px;
-  grid-auto-flow: column;
-  grid-auto-columns: 270px;
-}
-
-.controls {
-  grid-row: 1 / -1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 5px;
-  text-align: center;
-}
-
-.col-header {
-  padding: 15px 10px 10px;
-  align-self: center;
-  background: #222;
-  height: 100%;
-}
-
-.col-header h3 {
+.main-nav > ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav > ul > li {
+  padding: 10px;
+  display: inline-block;
+}
+
+main {
+  border: 3px dashed;
+  margin: 4rem 0;
+}
+
+.side-nav {
+  border: 3px dashed;
+}
+
+.news-feed {
+  border: 3px dashed;
+}
+
+.services {
+  border: 3px dashed;
+}
+
+.post {
+  background: white;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.post__info a, .post__info span {
+  display: block;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.post__content img {
+  width: 100%;
+}
+
+.comment {
+  background: #eee;
+  border-top: solid 1px #ccc;
+}
+.comment input {
+  width: 100%;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: solid 1px #ccc;
+  padding: 10px 20px;
 }
