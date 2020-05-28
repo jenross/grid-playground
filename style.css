@@ -1,17 +1,44 @@
-* {
+html {
   box-sizing: border-box;
 }
 
-.container {
-  display: grid;
-  grid: auto / 1fr 3fr 1fr;
-  grid-gap: 10px;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-.container div {
-  background: purple;
-  color: #fff;
-  text-align: center;
-  height: 100vh;
-  /* line-height: 100px; */
+body {
+  background: #ddd;
+}
+
+.header {
+  background: white;
+  color: #333;
+}
+
+.main-nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav > ul > li {
+  display: inline-block;
+}
+
+main {
+  border: 3px dashed red;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 152px;
+}
+
+.user-info {
+  border: 3px dashed blue;
+}
+
+.news-feed {
+  border: 3px dashed blue;
 }
