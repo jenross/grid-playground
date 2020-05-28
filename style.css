@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid: auto / 1fr 3fr 1fr;
+  grid-gap: 10px;
+}
+
+.container div {
+  background: purple;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+  /* line-height: 100px; */
+}
