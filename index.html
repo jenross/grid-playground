@@ -12,38 +12,40 @@
   </head>
   <body>
     <div class="grid">
-      <header>
-        <div class="logo">ST</div>
-        <nav class="main-nav">
-          <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Work</li>
-          </ul>
-        </nav>
+      <div class="controls">
+        <div class="controls__top">
+          <button>+</button>
+          <button>=</button>
+        </div>
+        <div class="controls__bottom">
+          <button>00</button>
+        </div>
+      </div>
+      <header class="col-header">
+        Col Header
       </header>
-      <video
-        autoplay
-        loop
-        muted
-        src="assets/coverr-beach.mp4"
-      ></video>
-      <main>
-        <h1>I am Scott</h1>
-        <p>
-          I make websites with grid.
-        </p>
-      </main>
-      <footer>
-        <h3>Social Nav</h3>
-        <nav class="social-nav">
-          <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Insta</li>
-          </ul>
-        </nav>
-      </footer>
+      <section class="col">
+        <div class="tweet">
+          <img src="http://via.placeholder.com/50x50" />
+          <p>
+            The next What Is? Video is going to be What Is ES6? Trying out some
+            new style on this video, excited to see how it turns out.
+          </p>
+          <div class="tweet__icons">
+            <button>+</button>
+            <button>-</button>
+            <button>0</button>
+          </div>
+        </div>
+      </section>
+      <header class="col-header">
+        Col Header
+      </header>
+      <section class="col"></section>
+      <header class="col-header">
+        Col Header
+      </header>
+      <section class="col"></section>
     </div>
   </body>
 </html>
